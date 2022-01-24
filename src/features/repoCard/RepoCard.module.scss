@@ -1,0 +1,20 @@
+@import '../../vars.scss';
+
+
+.repocard {
+  padding: 10px;
+  margin: 0 10px 20px 10px;
+  width: 230px;
+  border: 1px solid $borderColor;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.language {
+  color: $langColor;
+}
+
+.upd {
+  color: $updColor;
+}

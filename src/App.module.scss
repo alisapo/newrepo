@@ -1,0 +1,52 @@
+@import './vars.scss';
+
+@mixin flexAlignCenter {
+  display: flex;
+  align-items: center;
+}
+
+*, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  @include flexAlignCenter;
+
+  flex-direction: column;
+
+  h3 {
+    padding-top: $padding;
+  }
+}
+
+.users {
+  @include flexAlignCenter;
+
+  width: 900px;
+  padding-top: $padding;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.buttons {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+
+  .button {
+    cursor: pointer;
+    padding: 10px;
+    background-color: $buttonBackground;
+    color: $borderButton;
+    border: 1px solid $borderButton;
+    border-radius: 4px;
+
+    &:hover {
+      color: $buttonBackground;
+      background-color: $borderButton;
+    }
+  }
+}
